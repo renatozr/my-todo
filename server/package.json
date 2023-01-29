@@ -1,0 +1,29 @@
+{
+  "name": "my-todo-server",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Renato Zanella",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "dbsetup": "sh sequelize-setup.sh",
+    "prod": "npm run dbsetup && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.26.0",
+    "sequelize-cli": "^6.5.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.18"
+  }
+}
