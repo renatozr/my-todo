@@ -17,11 +17,7 @@ module.exports = {
     dialect: 'mysql',
   },
   production: {
-    username: 'root',
-    password: 'root',
-    database: 'my_todo_db',
-    host: 'db',
-    port: 3306,
-    dialect: 'mysql',
+    url: process.env.DATABASE_URL,
+    dialect: 'postgres',
   },
 };
