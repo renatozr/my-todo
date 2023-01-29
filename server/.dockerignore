@@ -1,0 +1,6 @@
+node_modules
+.env
+.env.example
+.eslintignore
+.eslintrc.json
+my_todo_db.sql
