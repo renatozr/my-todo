@@ -7,8 +7,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "dbsetup": "sh sequelize-setup.sh",
-    "prod": "npm run dbsetup && npm start",
+    "dbinit": "sh sequelize-init.sh",
+    "prod": "npm run dbinit && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
