@@ -11,4 +11,4 @@ git clone git@github.com:renatozr/my-todo.git \
 && cd my-todo \
 && docker compose up -d --build
 ```
-Enter http://localhost:3000 in your browser
+<a href="http://localhost:3000" target="_blank">Check in your browser</a>
