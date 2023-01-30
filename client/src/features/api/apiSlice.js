@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const apiSlice = createApi({
   reducerPath: 'api',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://my-todo-api-szq3.onrender.com' }),
+  baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_MYTODO_API_URL }),
   tagTypes: ['Task'],
   endpoints: (builder) => ({
     getTasks: builder.query({
