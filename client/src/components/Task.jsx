@@ -13,7 +13,7 @@ const statusTagColors = ['none', 'warning', 'danger', 'success'];
 
 export default function Task({ task }) {
   const [isFormActive, setIsFormActive] = useState(false);
-  const [deleteTask] = useDeleteTaskMutation();
+  const [deleteTask, { isLoading }] = useDeleteTaskMutation();
   const [updateTask] = useUpdateTaskMutation();
 
   if (isFormActive) return <TaskForm isUpdate task={task} setIsFormActive={setIsFormActive} />;
@@ -59,7 +59,7 @@ export default function Task({ task }) {
         <button
           type="button"
           onClick={() => deleteTask(task.id)}
-          className="button is-small is-danger"
+          className={`button is-small is-danger ${isLoading ? 'is-loading' : ''}`}
         >
           <FontAwesomeIcon icon={faTrash} />
         </button>
