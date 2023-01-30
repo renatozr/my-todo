@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter, faPlus } from '@fortawesome/free-solid-svg-icons';
 import Loading from './Loading';
 import TaskForm from './TaskForm';
 import { useGetStatusesQuery } from '../features/api/apiSlice';
@@ -27,7 +29,7 @@ export default function FilterBar() {
             className="input"
           />
           <span className="icon is-left">
-            <i className="fa-solid fa-filter" />
+            <FontAwesomeIcon icon={faFilter} />
           </span>
         </div>
 
@@ -52,7 +54,7 @@ export default function FilterBar() {
         className="button is-success ml-6 mr-2"
       >
         <span className="icon">
-          <i className="fa-solid fa-plus" />
+          <FontAwesomeIcon icon={faPlus} />
         </span>
       </button>
 

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { useDeleteTaskMutation, useUpdateTaskMutation } from '../features/api/apiSlice';
 import TaskForm from './TaskForm';
 
@@ -51,7 +53,7 @@ export default function Task({ task }) {
           onClick={() => setIsFormActive(true)}
           className="button is-small is-warning mx-2"
         >
-          <i className="fa-solid fa-pen-to-square" />
+          <FontAwesomeIcon icon={faPenToSquare} />
         </button>
 
         <button
@@ -59,7 +61,7 @@ export default function Task({ task }) {
           onClick={() => deleteTask(task.id)}
           className="button is-small is-danger"
         >
-          <i className="fa-solid fa-trash" />
+          <FontAwesomeIcon icon={faTrash} />
         </button>
       </div>
 

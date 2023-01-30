@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import FilterBar from './components/FilterBar';
 import TasksList from './components/TasksList';
 import 'bulma/css/bulma.min.css';
@@ -31,7 +34,7 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa-brands fa-square-github fa-xl" />
+              <FontAwesomeIcon icon={faGithubSquare} size="xl" />
             </a>
           </span>
           <span className="icon-text mr-1">
@@ -41,13 +44,13 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa-brands fa-linkedin fa-xl" />
+              <FontAwesomeIcon icon={faLinkedin} size="xl" />
             </a>
           </span>
           with
           <span className="icon-text ml-1">
             <span className="icon">
-              <i className="fa-solid fa-heart fa-lg" />
+              <FontAwesomeIcon icon={faHeart} size="lg" />
             </span>
           </span>
         </p>
