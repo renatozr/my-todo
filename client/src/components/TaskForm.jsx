@@ -6,7 +6,7 @@ import {
   useUpdateTaskMutation,
 } from '../features/api/apiSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRotateLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faRotateLeft, faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function TaskForm({
   isCreate,
@@ -81,7 +81,7 @@ export default function TaskForm({
           className="button is-link is-outlined ml-6"
         >
           <span className="icon">
-            <FontAwesomeIcon icon={faAngleRight} />
+            <FontAwesomeIcon icon={faAnglesRight} />
           </span>
         </button>
 
