@@ -21,7 +21,7 @@ export default function TaskForm({
   const [name, setName] = useState(task.name);
   const [statusId, setStatusId] = useState(task.status.id);
   const { data: statuses } = useGetStatusesQuery();
-  const [mutateTask] = useTaskMutation();
+  const [mutateTask, { isLoading }] = useTaskMutation();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -78,7 +78,7 @@ export default function TaskForm({
 
         <button
           type="submit"
-          className="button is-link is-outlined ml-6"
+          className={`button is-link is-outlined ${isLoading ? 'is-loading' : ''} ml-6`}
         >
           <span className="icon">
             <FontAwesomeIcon icon={faAnglesRight} />
