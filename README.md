@@ -2,7 +2,7 @@
 
 ### [Demo](https://my-todo-webapp.onrender.com)
 
-<img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves"  width="" />
+<img src="https://media1.tenor.com/images/6c90e9d1ce1fb66d3466eaff94a713f1/tenor.gif?itemid=27490758" alt="my todo webapp"  width="" />
 
 ## Running in your machine
 Make sure the ports 3000, 5000 and 3306 are available
